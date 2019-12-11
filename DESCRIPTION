@@ -1,0 +1,28 @@
+Package: SealCoxProcess
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Description: Brief R-package containing the code used in the paper Estimating seal pup production in the Greenland Sea using Bayesian hierarchical modeling, by Martin Jullum, Thordis Thorarinsdottir and Fabian Bachl, accepted for publication in Journal of the Royal Statitsical Society, Series C (Dec 2019). A preprint of the paper is currently available on [arXiv](https://arxiv.org/abs/1808.09254).
+Authors@R: c(person("Martin", "Jullum", email = "Martin.Jullum@nr.no", role = c("cre","aut"), comment = c(ORCID = 0000-0003-3908-5155)))  
+URL: https://github.com/PointProcess/SealCoxProcess-JRSSC-code
+BugReports: https://github.com/PointProcess/SealCoxProcess-JRSSC-code/issues
+Maintainer: <jullum@nr.no>
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Imports: 
+  akima, 
+  Hmisc, 
+  deldir, 
+  doParallel, 
+  fields, 
+  rgdal, 
+  rgeos, 
+  sp, 
+  spatstat, 
+  PBSmapping, 
+  doMC,
+Depends: 
+  INLA, 
+  splancs, 
+  mgcv
