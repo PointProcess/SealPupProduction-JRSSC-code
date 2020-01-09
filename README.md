@@ -14,18 +14,12 @@ For any questions about the paper, code or data can be raised by opening
 a Github issue, or sending an email to the corresponding author
 [jullum@nr.no](mailto:jullum@nr.no?subject=SealCoxProcess-JRSSC-code-Github)
 
-## TO DO
+## Note
 
-  - Add data (after getting permission to do so)
-  - Add and clean up the
-scripts
-
-<!-- File  | Description -->
-
-<!-- ------------- | ------------- -->
-
-<!--   simulation_script.R                         | This is the main script executing the simulation experiment in the paper. Settings for full simulation is commented out, such that the script can be ran quickly.  -->
-
-<!-- timing_deterministic_integration_methods.R  | Script for timing the deterministic integration methods. -->
-
-<!-- help_function.R | All functions used in the above scripts. Ufortunatly, almost no documentation is available.  -->
+The original satellite image files are processed by scripts to be
+compatible with the functions in the package. The original file is not
+that big, but the most detailed processed files are several hunder Mb.
+For this reason, the largest files have not been processed. These can be
+processed by the script `inst\scripts\large_file_processing.R`. These
+files are, however, not required to run the functions in the package
+with the default settings.
