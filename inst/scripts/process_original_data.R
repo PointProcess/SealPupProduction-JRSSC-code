@@ -25,7 +25,7 @@ seals$ykm <- seals$y*1852/1000 # from Nm
 seals$lengthkm <- seals$length/1000 # from m
 seals$widthkm <- seals$width/1000 # from m
 
-saveRDS(seals,file=outfile)
+saveRDS(seals,file=file.path(processed_folder,outfile))
 
 ###### Creating transect data counts on same x-y-km-format #####
 
