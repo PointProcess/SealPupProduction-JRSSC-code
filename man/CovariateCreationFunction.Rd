@@ -5,9 +5,10 @@
 \title{Function for creating a dense grid with all covariate values}
 \usage{
 CovariateCreationFunction(
- 
-    satelliteFile = "/nr/project/stat/PointProcess/Data/Seals/Satellite/reflectance_0.0025deg_grid_modis_20120328_1310.tif",
-  sealFile = "/nr/project/stat/PointProcess/Data/Seals/WestIce2012.csv",
+  satelliteFile = system.file("extdata", "original",
+    "reflectance_0.0025deg_grid_modis_20120328_1310.tif", package = "SealCoxProcess"),
+  sealFile = system.file("extdata", "original", "WestIce2012.csv", package =
+    "SealCoxProcess"),
   xkmRange = c(-65.33908, 67.99593),
   ykmRange = c(-103.87783, 85.35911),
   covariates.type,

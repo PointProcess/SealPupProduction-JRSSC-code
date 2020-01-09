@@ -5,12 +5,12 @@
 \title{Seal counting using INLA and Poisson regression formulation}
 \usage{
 INLAPPSealsPoissonReg(
- 
-    resultsBaseFolder = "/nr/samba/user/jullum/Prosjekter/FRINATEK-Point/PointProcessesInINLA/Results/PoissonReg",
-  sealPhotoDataFile = "/nr/project/stat/PointProcess/Data/Seals/OriginalSealsKm.rds",
- 
-    sealTransectDataFile = "/nr/project/stat/PointProcess/Data/Seals/OigardTablesTransformed.rds",
-  satelliteDataFolder = "/nr/project/stat/PointProcess/Data/Seals/Satellite/",
+  resultsBaseFolder = "./Results/PoissonReg",
+  sealPhotoDataFile = system.file("extdata", "processed", "OriginalSealsKm.rds", package
+    = "SealCoxProcess"),
+  sealTransectDataFile = system.file("extdata", "processed",
+    "OigardTablesTransformed.rds", package = "SealCoxProcess"),
+  satelliteDataFolder = system.file("extdata", "processed", package = "SealCoxProcess"),
   sealType = "hooded",
   spatial = TRUE,
   covariate.fitting = "linear",

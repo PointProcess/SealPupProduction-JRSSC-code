@@ -5,12 +5,12 @@
 \title{Do not both to write help function}
 \usage{
 GAMFittingFunc(
- 
-    resultsBaseFolder = "/nr/samba/user/jullum/Prosjekter/FRINATEK-Point/PointProcessesInINLA/Results/GAM",
-  sealPhotoDataFile = "/nr/project/stat/PointProcess/Data/Seals/OriginalSealsKm.rds",
- 
-    sealTransectDataFile = "/nr/project/stat/PointProcess/Data/Seals/OigardTablesTransformed.rds",
-  satelliteDataFolder = "/nr/project/stat/PointProcess/Data/Seals/Satellite/",
+  resultsBaseFolder = "./Results/GAM",
+  sealPhotoDataFile = system.file("extdata", "processed", "OriginalSealsKm.rds", package
+    = "SealCoxProcess"),
+  sealTransectDataFile = system.file("extdata", "processed",
+    "OigardTablesTransformed.rds", package = "SealCoxProcess"),
+  satelliteDataFolder = system.file("extdata", "processed", package = "SealCoxProcess"),
   sealType = "hooded",
   covariate.fitting = "linear",
   covariates.type = "band1",

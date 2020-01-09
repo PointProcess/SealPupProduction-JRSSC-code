@@ -16,8 +16,5 @@ int.polygon.MJ(mesh, loc, group = NULL, parallelize.numCores = 2)
 }
 \description{
 Parallelized function for finding integration points for a given mesh and locations defining the polygons where observations are being made.
-Created by Fabian Bachl.
-}
-\author{
-Fabian E. Bachl <\email{f.e.bachl@bath.ac.uk}>
+Edited version of Fabian Bachls code.
 }
