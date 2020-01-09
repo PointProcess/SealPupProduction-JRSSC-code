@@ -68,9 +68,4 @@ saveRDS(object = band1_2000, file = file.path(outfolder,"cov_grid_band1.rds"))
 band2_2000 <- CovariateCreationFunction(noPixEachDim = 2000,covariates.type="band2")
 saveRDS(object = band2_2000, file = file.path(outfolder,"cov_grid_band2.rds"))
 
-band1_5000 <- CovariateCreationFunction(noPixEachDim = 5000, covariates.type="band1")
-saveRDS(object = band1_5000, file = file.path(outfolder,"cov_grid_band1_5000.rds"))
-
-band2_5000 <- CovariateCreationFunction(noPixEachDim = 5000, covariates.type="band2")
-saveRDS(object = band2_5000, file = file.path(outfolder,"cov_grid_band2_5000.rds"))
 

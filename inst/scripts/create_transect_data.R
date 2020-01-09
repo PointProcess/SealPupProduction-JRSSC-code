@@ -46,4 +46,6 @@ tab1[,4]=-tab1[,4]
 colnames(tab1) <- c("","lat","lonStart","lonEnd","noPhotos","noHarps","noHooded")
 tab1Df <- as.data.frame(tab1[,-1])
 
+dir.create(processed_folder,recursive = T)
+
 saveRDS(tab1Df,file = file.path(processed_folder,outfile))
