@@ -16,10 +16,11 @@ Society, Series C (Dec 2019). A preprint of the paper is currently available on
 For any questions about the paper, code or data can be raised by opening a Github issue, or sending an email to the 
 corresponding author [jullum@nr.no](<mailto:jullum@nr.no?subject=SealCoxProcess-JRSSC-code-Github>)
 
-## TO DO
+## Getting started
 
-- Add data (after getting permission to do so)
-- Add and clean up the scripts
+To get started using the package with the seal and satellite data in the paper, you first need to process them.
+This is done running the scripts `inst\scripts\create_transect_data.R` and `inst\scripts\process_original_data.R` 
+(in that order). Processing of the satellite data may take up to an hour or two.
 
 <!-- File  | Description -->
 <!-- ------------- | ------------- -->
