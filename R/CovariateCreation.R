@@ -18,8 +18,8 @@
 #' @import spatstat
 #' @export
 
-CovariateCreationFunction <- function(satelliteFile = "/nr/project/stat/PointProcess/Data/Seals/Satellite/reflectance_0.0025deg_grid_modis_20120328_1310.tif",
-                                      sealFile = "/nr/project/stat/PointProcess/Data/Seals/WestIce2012.csv",
+CovariateCreationFunction <- function(satelliteFile = system.file("extdata", "original","reflectance_0.0025deg_grid_modis_20120328_1310.tif", package = "SealCoxProcess"),
+                                      sealFile = system.file("extdata", "original","WestIce2012.csv", package = "SealCoxProcess"),
                                       xkmRange = c(-65.33908,  67.99593), #
                                       ykmRange = c(-103.87783, 85.35911), #
                                       covariates.type, # "band1", "band2",
@@ -32,33 +32,6 @@ CovariateCreationFunction <- function(satelliteFile = "/nr/project/stat/PointPro
   ## Extracts the covariates
   covFullCoordLatLon <- sp::coordinates(covariates)
 
-  ## Defines function for transfering longitude-latitude to x and y in km.
-  lb2xykm <- function(lon,lat,lon0,lat0){
-    n = length(lon);
-    l0 = lon0/180*pi;
-    b0 = lat0/180*pi;
-    R=6360/1.852;
-    l = lon/180*pi;
-    b = lat/180*pi;
-
-    x=array(0,length(l));
-    y=array(0,length(b));
-    cb0=cos(b0);
-    sb0=sin(b0);
-    A = rbind(c(0,1,0),c(-sb0,0,cb0),c(cb0,0,sb0))
-    cl=cos(l-l0);
-    sl=sin(l-l0);
-    cb=cos(b);
-    sb=sin(b);
-    xg=rbind(cb*cl,cb*sl,sb)
-    xp=A%*%xg;
-    x=xp[1,]*R;
-    y=xp[2,]*R;
-    xkm=x*1.852
-    ykm=y*1.852
-    NM = data.frame(x=xkm,y=ykm)
-    return(NM)
-  }
 
   ## Defines the reference points for the transformation (the same used for transforming the original seals data)
   seals0=read.csv(file=sealFile)

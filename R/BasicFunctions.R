@@ -267,14 +267,13 @@ split.lines = function(mesh, sp, ep, filter.zero.length = TRUE) {
 #' Integration points for polygons inside an inla.mesh usign parallelization
 #'
 #' Parallelized function for finding integration points for a given mesh and locations defining the polygons where observations are being made.
-#' Created by Fabian Bachl.
+#' Edited version of Fabian Bachls code.
 #'
 #' @aliases int.polygon
 #' @export
 #' @param mesh An inla.mesh object
 #' @param loc Locations defining the polygons
 #' @param group If loc defines multiple polygons then this is the ID of the group for each location in loc
-#' @author Fabian E. Bachl <\email{f.e.bachl@@bath.ac.uk}>
 
 int.polygon.MJ = function(mesh, loc, group = NULL,parallelize.numCores=2){
 
