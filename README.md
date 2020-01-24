@@ -7,8 +7,10 @@ This repository contains a brief `R`-package associated with the paper
 *Estimating seal pup production in the Greenland Sea using Bayesian
 hierarchical modeling*, by Martin Jullum, Thordis Thorarinsdottir and
 Fabian Bachl, accepted for publication in Journal of the Royal
-Statitsical Society, Series C (Dec 2019). A preprint of the paper is
-currently available on [arXiv](https://arxiv.org/abs/1808.09254).
+Statitsical Society, Series C (Dec 2019). The full paper is available
+here: [doi.org/10.1111/rssc.12397](https://doi.org/10.1111/rssc.12397)
+The preprint of the paper is available on 
+[arXiv](https://arxiv.org/abs/1808.09254).
 
 For any questions about the paper, code or data can be raised by opening
 a Github issue, or sending an email to the corresponding author
